@@ -45,7 +45,7 @@ body {
 .qr-code-component-main img{
     height: 100%;
     border-radius: 12px;
-    padding-top: 15px;
+    margin-top: 15px;
 }
 
 .qr-code-component-title {
@@ -55,13 +55,17 @@ body {
 
 .qr-code-component-title h1{
     font-size: 22px;
-    /* margin: 10px; */
-    padding: 5px;
+    font-weight: var(--Weights-700);
 }
 
 .qr-code-component-title p{
     color: var(--Slate500);
     padding: var(--padding);
     font-weight: var(--Weights-400);
+    margin: 5px 15px;
 
+}
+
+.attribution{
+    padding: var(--padding);
 }
