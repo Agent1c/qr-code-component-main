@@ -14,11 +14,12 @@
     --Slate900: hsl(218, 44%, 22%);
 
     --OutFit: "Outfit", sans-serif;
-    --Weights: 400;
-    --Weights: 700;
+    --Weights-400: 400;
+    --Weights-700: 700;
 
     --min-width: 1440px;
     --max-width: 320px;
+    --padding: 15px 10px;
 }
 
 body {
@@ -30,19 +31,37 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    height: 100vh;
 }
 
 .qr-code-component-main {
     border-radius: 20px;
     background: var(--White);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: var(--max-width);
+    /* padding: var(--padding); */
+    margin: 10px;
+}
+.qr-code-component-main img{
+    height: 100%;
+    border-radius: 12px;
+    padding-top: 15px;
 }
 
 .qr-code-component-title {
-    padding: 20px;
+    padding: var(--padding);
+    /* width: 100%; */
+}
+
+.qr-code-component-title h1{
+    font-size: 22px;
+    /* margin: 10px; */
+    padding: 5px;
+}
+
+.qr-code-component-title p{
+    color: var(--Slate500);
+    padding: var(--padding);
+    font-weight: var(--Weights-400);
+
 }
